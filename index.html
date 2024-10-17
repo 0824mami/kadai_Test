@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="l_header">
+        <div id="menu-bg">
+            <div class="l_header__inner">
+                <div class="l_header__logo">
+                    <a href="##">
+                        <img src="img/header_logo.png" alt="logoImage"></a>
+                </div>
+
+                <div class="e_conts-body">
+                    <button class="hamburger">
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                    </button>
+                </div>
+
+                <!-- <button type="button" id="header-btn" class="header-btn" title="MENU_open"><span
+                    lang="ja">メニュー開閉</span></button> -->
+
+                <nav class="l_gnav">
+                    <ul class="l_gnav__list">
+                        <li class="l_gnav__item"><a href="#About" target="_blank">About</a></li>
+                        <li class="l_gnav__item"><a href="#Course" target="_blank">Course</a></li>
+                        <li class="l_gnav__item">
+                            <a href="#News" target="_blank">News</a>
+                        </li>
+                        <li class="l_gnav__item"><a href="#Access" target="_blank">Access</a></li>
+                        <li class="l_gnav__item"><a href="#Contact" target="_blank">Contact</a></li>
+                    </ul>
+                </nav>
+
+
+                <!--  -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="l_containts_wrapper1">
+            <div class="l_mainVisual_box">
+                <div class="d_inner_img">
+
+                    <img src="img/mainbg.png" alt="">
+
+
+                </div>
+                <div class="L_mVsl__inner_Text">
+                    <div class="e_mVsl__inner_txt01">世界を変えるチーズを作ろう</div>
+                    <div class="e_mVsl__inner_txt02">チーズ職人養成学校「チーズアカデミーTOKYO」
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l_containts_wrapper2">
+            <div class="c_section_ttl">
+                <section id="About" class="About">
+                    <h1>About</h1>
+
+                </section>
+            </div>
+        </div>
+        <div class="c_section_ttl">
+            <section id="Course" class="Course">
+
+                <h1>Course</h1>
+
+            </section>
+        </div>
+
+        <div class="c_section_ttl">
+            <section id="News" class="News">
+                <h1>News</h1>
+            </section>
+        </div>
+        <div class="c_section_ttl">
+            <section id="Access" class="Access">
+                <h1>Access</h1>
+
+            </section>
+        </div>
+        <div class="c_section_ttl">
+            <section id="Contact" class="Contact">
+                <h1>Contact</h1>
+
+            </section>
+        </div>
+
+        </div>
+
+
+
+
+
+    </main>
+
+    <div>
+        <table>
+            <tbody class="FormTable">
+                <tr>
+                    <td style="border-left: none;"><label for="name">名前</label></td>
+                    <td style="border-right: none;"> <input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td style="border-left: none;"><label for="name">カナ</label></td>
+                    <td style="border-right: none;"> <input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td style="border-left: none;"><label for="email">メールアドレス</label></td>
+                    <td style="border-right: none;"> <input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td style="border-left: none;"><label for="message">チーズアカデミーを知ったきっかけ</label></td>
+                    <td style="border-right: none;"><select name="" id="">
+                            <option value="selectes">google検索
+                                <optgroup></optgroup>
+                            </option>
+                            <option value="value">sns</option>
+                            <option value="value">紹介
+                            </option>
+                            <option value="value">たまたま通りかかった
+                            </option>
+                            <option value="value">その他</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td style="border-left: none;">志望動機</td><label for="message">志望動機</label></td>
+                    <td style="border-right: none;">
+                        <fieldset>
+                            <div>
+                                <input type="checkbox" id="coding" name="interest" value="coding" />
+                                <label for="coding">起業をしたい</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="music" name="interest" value="music" />
+                                <label for="music">チーズ系企業に就職したい</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="music" name="interest" value="music" />
+                                <label for="music">チーズと関わる仕事をしており、仕事に生かしたい</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="music" name="interest" value="music" />
+                                <label for="music">チーズの教養を身につけたい</label>
+                            </div>
+                        </fieldset><input type="text" id="content" name="content">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-left: none;"><label for="message">詳細</label>
+                    </td>
+                    <td style="border-right: none;"><input type="text" id="content" name="content"></td>
+
+                    <textarea id="message" name="message"></textarea>
+        </table>
+
+
+        <div>
+            <input type="submit" name="送信">
+
+            <form action="/form.php" method="post">
+
+                <!-- フォームの部品 -->
+
+
+
+
+        </div>
+
+
+    </div>
+    <footer>
+        <div class="c_footer">
+            <p>copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
