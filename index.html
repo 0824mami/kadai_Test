@@ -9,6 +9,10 @@
   <title>チーズアカデミー</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <script src=" https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <!-- 最初の設定は終わっています　必要な方は触ってください -->
 
@@ -28,13 +32,13 @@
         <a href="##"><img src="img/header_logo.png" alt="Header画像">
         </a>
         <!-- ↓読み上げ機能に対応？　CSSでABOUT〜大文字化 -->
-        <nav class="l_nav">
+        <nav class="listColumn">
           <ul class="l_nav__list">
-            <li class="l_nav__item"><a href="#About">About</a></li>
-            <li class="l_nav__item"><a href="#Course">Course</a></li>
-            <li class="l_nav__item"><a href="#News">News</a></li>
-            <li class="l_nav__item"><a href="#Access">Access</a></li>
-            <li class="l_nav__item"><a href="#Contact">Contact</a></li>
+            <li class="l_nav__item"><a href="#About">About</a><span lang="ja">私たちについて</span></li>
+            <li class="l_nav__item"><a href="#Course">Course</a><span lang="ja">コース</span></li>
+            <li class="l_nav__item"><a href="#News">News</a><span lang="ja">ニュース</span></li>
+            <li class="l_nav__item"><a href="#Access">Access</a><span lang="ja">アクセス</span></li>
+            <li class="l_nav__item"><a href="#Contact">Contact</a><span lang="ja">お問い合わせ</span></li>
           </ul>
       </div>
 
@@ -50,38 +54,55 @@
     <main>
       <div class="thum_box" style="background-image: url(img/mainbg.png);">
         <!-- <div class="innerImg"> -->
-        <div class="test">
-        </div>
-        <div class="textArea">
-          <h1>セカイを変えるチーズを作ろう</h1>
-          <h2>チーズ職人養成学校「チーズアカデミーTOKYO」</h2>
-        </div>
+
         <!-- </div> -->
       </div>
 
       <div class="containts_wrapper">
 
         <!-- <article></article> -->
-        <section class="section_ttl">
-          <div id="About" class="About">
+        <section class="section_ttlA">
+          <!--  responsive-->
+          <div class="hiddenH1H2">
             <h1>ABOUT</h1>
             <h2>チーズアカデミーは、チーズ職人養成学校です。</h2>
-            <p>
-              チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
-            </p>
-            <p>そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。</p>
-            そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。
-            </p>
-            <p>卒業後、チーズ自給自足のバックアップはもちろんのこと、</p>
-            </p>チーズ職人への就職・転職もサポートします。</p>
-            </p>
-            <div class="l_aboutImg">
-              <img class="e_aboutImg_item" src="img/about_01.jpg" alt="">
-              <img class="e_aboutImg_item" src="img/about_02.jpg" alt="">
-              <img class="e_aboutImg_item" src="img/about_03.jpg" alt="">
-              <img class="e_aboutImg_item" src="img/about_04.jpg" alt="">
-            </div>
           </div>
+          <!--  responsive-->
+          <div id="About" class="About">
+
+            <div class="AboutTextArea">
+
+
+
+              <p>
+                チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
+              </p>
+              <p>そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。</p>
+              そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。
+              </p>
+              <p>卒業後、チーズ自給自足のバックアップはもちろんのこと、</p>
+              </p>チーズ職人への就職・転職もサポートします。</p>
+              </p>
+            </div>
+            <div class="slick-slider">
+              <div class="slider-item"><img class="slider_item" src="img/about_01.jpg"></div>
+
+              <div class="slider-item"><img class="slider_item" src="img/about_02.jpg"></div>
+              <div class="slider-item"><img class="slider_item" src="img/about_03.jpg"></div>
+              <div class="slider-item"><img class="slider_item" src="img/about_04.jpg"></div>
+            </div>
+
+          </div>
+          <!--  -->
+
+
+          <div class="l_aboutImg">
+            <img class="e_aboutImg_item" src="img/about_01.jpg" alt="">
+            <img class="e_aboutImg_item" src="img/about_02.jpg" alt="">
+            <img class="e_aboutImg_item" src="img/about_03.jpg" alt="">
+            <img class="e_aboutImg_item" src="img/about_04.jpg" alt="">
+          </div>
+
         </section>
         <section class="section_ttl">
           <div id="Course" class="Course">
@@ -184,8 +205,8 @@
               <h2>会社情報</h2>
             </div>
             <!-- <a class="button_countact" href="##">Access</a> -->
-            <map name="map">
-              <iframe
+            <map class="map">
+              <iframe class="iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.311300537683!2d139.70042197548827!3d35.669336130627855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9fa9e2e881%3A0x35396adb5ba7ce03!2z44K444O844K644Ki44Kr44OH44Of44O85p2x5Lqs!5e0!3m2!1sja!2sjp!4v1728871909360!5m2!1sja!2sjp"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
@@ -301,13 +322,33 @@
         <footer class="footer">
           copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.
         </footer>
+        <footer class="footer2">
+          <div class="footer_gnav">
+            <button class="f_btn" type="button"><a href="#">講座について</a></button>
+          </div>
+        </footer>
       </div>
+
+
+
+
     </main>
 
     <!-- ここから上にコードを書く -->
     <!-- この中に記述していく -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(function () {
+        $('.slick-slider').slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          infinite: true,
+          dots: true
+        });
+      });
+    </script>
   </body>
 
 </html>
